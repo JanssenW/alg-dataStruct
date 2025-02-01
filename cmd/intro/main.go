@@ -5,6 +5,13 @@ import (
 )
 
 func main() {
+	// THe blocks to build a data structure are very similar, and mainly the difference is the way that we add, remove and find elements.
+	// Beside that we are always using arrays and linked lists.
+
+	graphs()
+	heap()
+	binaryTree()
+	stack()
 	hashMap()
 	queue()
 	linkedList()
@@ -12,10 +19,107 @@ func main() {
 	bigo()
 }
 
-func stack() {
+func trie() {
+
+	/*
+		Trie - Data Structure // A type of tree (also known as prefix tree)
+		- A trie is a tree-like data structure that stores a dynamic set of strings.
+		- Each node in a trie represents a single character.
+		- The root node represents an empty string.
+		- It retains the prefix property, meaning that each node's children share a common prefix of the string associated with the previous node.
+
+		Tries are used to store dictionaries, phone directories, and autocomplete features.
+
+	*/
+}
+
+func graphs() {
+	fmt.Println("Graphs")
+	/*
+		Graphs
+		- A graph is a collection of nodes(vertices) and edges that connect the nodes.
+		- A graph can be directed or undirected.
+		- In a directed graph, the edges have a direction.
+		- In an undirected graph, the edges do not have a direction.
+		- A graph can be weighted or unweighted.
+		- In a weighted graph, each edge has a weight.
+		- In an unweighted graph, each edge does not have a weight.
+	*/
+}
+
+func heap() {
+	fmt.Println("Heap")
+
+	/*
+		Heap - A special tree-based data structure that satisfies the heap property.
+		- A heap is a complete binary tree.
+		- A heap can be a min-heap or a max-heap.
+		- In a min-heap, the parent node is less than or equal to the child nodes.
+		- In a max-heap, the parent node is greater than or equal to the child nodes.
+
+	*/
+
+}
+func binaryTree() {
+	fmt.Println("Binary Tree")
+
+	/*
+		Binary Tree
+		- A tree data structure where each node has at most two children.
+		- The top node is called the root node(head).
+		- The nodes at the bottom are called leaf nodes.
+		- The nodes that are not leaf nodes are called internal nodes.
+		- The height of the tree is the number of edges on the longest path from the root node to a leaf node.
+		- The depth of a node is the number of edges on the path from the root node to the node.
+		- The height of the tree is the height of the root node.
+		- The depth of the root node is 0.
+		- The height of an empty tree is -1.
+
+		Binary Search Tree (BST)
+		- A binary tree where the left child is less than the parent node and the right child is greater than the parent node.
+		- The left subtree of a node contains only nodes with keys less than the node's key.
+		- The right subtree of a node contains only nodes with keys greater than the node's key.
+		- The left and right subtree must also be a binary search tree.
+
+		Balanced Binary Tree (B-Tree)
+		- A binary tree where the height of the left and right subtrees of any node differ by at most one.
+		- The height of the left and right subtrees of the root node differ by at most one.
+		- The left and right subtrees are also balanced binary trees.
+
+		Complete Binary Tree
+		- A binary tree where all levels are completely filled except possibly for the last level, which is filled from left to right.
+		- A complete binary tree is a balanced binary tree.
+
+		Full Binary Tree
+		- A binary tree where each node has either zero or two children.
+		- A full binary tree is a complete binary tree.
+
+		Perfect Binary Tree
+		- A binary tree where all internal nodes have two children and all leaf nodes are at the same level.
+		- A perfect binary tree is a full binary tree.
+
+		Traversal
+		- Pre-order Traversal: Visit the root node first, then the left subtree, and finally the right subtree.
+		- In-order Traversal: Visit the left subtree first, then the root node, and finally the right subtree.
+		- Post-order Traversal: Visit the left subtree first, then the right subtree, and finally the root node.
+		- Level-order Traversal: Visit nodes level by level from left to right.
+
+	*/
+
+}
+func stack() { //also know as pilha in portuguese
+	fmt.Println("Stack")
+
+	/*
+		LIFO - Last In First Out
+		- Implemented using arrays or linked lists.
+		- The last element added to the stack will be the first to be removed.
+		- An pointer to the top element is maintained to add and remove elements in O(1) time complexity.
+	*/
 }
 
 func hashMap() {
+	fmt.Println("Hash Map")
 	/*
 		Hash Map - Key-Value Pair Data Structure (basicaly a dictionary)
 		Usually the complexity to add, remove and find an element is O(1) - constant time.
