@@ -5,15 +5,37 @@ import (
 )
 
 func main() {
+	hashMap()
 	queue()
 	linkedList()
 	array()
 	bigo()
 }
 
+func stack() {
+}
+
 func hashMap() {
 	/*
-	 */
+		Hash Map - Key-Value Pair Data Structure (basicaly a dictionary)
+		Usually the complexity to add, remove and find an element is O(1) - constant time.
+
+		The hash function is used to convert the key into an index in the array, since it is in a contiguous memory location, we can access the element in O(1) time complexity.
+		The hash functionon probably will be a SHA-256 or MD5, but it can be any function that converts the key into an index in the array.
+		A modulo operation is used to ensure that the index (SHA or MD5) is within the array bounds.
+
+
+		Collision can happen when two keys are converted into the same index, so we need to handle it.
+		There are two ways to handle collisions:
+		- Open Addressing: When a collision happens, we find the next available index in the array. It is not the best approach because in the worst case scenario we would need to iterate over all elements to find the next available index.
+		- Separate Chaining: When a collision happens, we store the elements in a linked list. It is the best approach because we can have multiple elements in the same index, this index will have a linked list with all elements that have the same index.
+		Since this sublist its supposed to be small, the time complexity to find an element is O(1).
+
+		Load Factor = Number of elements / Number of buckets. It defines how full the hash map is and it is used to determine when to resize the hash map.
+		Keep the load factor below 0.7 to avoid collisions. When the load factor is above 0.7, we need to resize (double) the hash map to avoid collisions.
+
+
+	*/
 }
 func queue() {
 
