@@ -17,6 +17,7 @@ func main() {
 	linkedList()
 	array()
 	bigo()
+
 }
 
 func trie() {
@@ -206,9 +207,9 @@ func array() {
 func bigo() {
 	fmt.Println("Big O Notation")
 	/*
-	   Big O Notation - Measuring Algorithm Performance
+	   Big O Notation - Measuring Algorithm scale and Performance
 
-	   - Big O notation is a way to describe the performance of an algorithm, but it does not necessarily represent execution time (performance in terms of speed).
+	   - Big O notation is a way to describe the scale of an algorithm, but it does not necessarily represent execution time (performance in terms of speed).
 	   - It focuses on how the execution time (or space usage) grows as the input size increases.
 
 	   - Without asymptotic analysis, it’s impossible to determine if an O(n) algorithm is always faster than an O(n²) algorithm.
