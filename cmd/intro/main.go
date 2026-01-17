@@ -122,6 +122,11 @@ func stack() { //also know as pilha in portuguese
 func hashMap() {
 	fmt.Println("Hash Map")
 	/*
+
+		An hash is made on key to generate an index in an array where the value will be stored,
+		sometime this values are structs or objects, usually a small linkedlist that contains
+		different elements with the same index. By doing that we keep time complexity O(1) while handle collisions.
+
 		Hash Map - Key-Value Pair Data Structure (basicaly a dictionary)
 		Usually the complexity to add, remove and find an element is O(1) - constant time.
 
