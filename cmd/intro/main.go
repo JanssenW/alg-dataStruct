@@ -17,7 +17,29 @@ func main() {
 	linkedList()
 	array()
 	bigo()
+	sorting()
 
+}
+
+func sorting() {
+
+	// Sorting Algorithms - arrange elements in a specific order (ascending or descending)
+
+	/*
+		- Bubble Sort
+		- Selection Sort
+		- Insertion Sort
+		- Merge Sort
+		- Quick Sort
+		- Heap Sort
+		- Radix Sort
+		- Counting Sort
+		- Bucket Sort
+	*/
+
+	// Its not necessary know how to implement all of them, however, it is needed understand how each one works
+	// When one performs better than the other - time and space complexity
+	// Know implement at least the main ones: Bubble, Selection, Insertion, Merge and Quick Sort
 }
 
 func trie() {
